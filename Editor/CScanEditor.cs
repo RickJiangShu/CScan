@@ -75,7 +75,7 @@ public class CScanEditor : Editor{
         float scanSeconds = (Timestamp() - startTime) * 0.001f;
 
         string scanName = !ignore ? "所有行" : "有效行";
-        UnityEngine.Debug.Log(string.Format("本次共扫描{0}个文件，{1}总共：{2}行（行数最多的是：{3},{4}行）\n选取文件耗时：{5}s，扫描耗时：{6}s", count.ToString("N0"), scanName, lineCount.ToString("N0"), maxFileName, maxLineCount.ToString("N0"), selectSeconds.ToString("0.000"), scanSeconds.ToString("0.000")));
+        UnityEngine.Debug.Log(string.Format("本次共扫描{0}个代码文件，{1}总共：{2}行（行数最多的是：{3},{4}行）\n选取文件耗时：{5}s，扫描耗时：{6}s", count.ToString("N0"), scanName, lineCount.ToString("N0"), maxFileName, maxLineCount.ToString("N0"), selectSeconds.ToString("0.000"), scanSeconds.ToString("0.000")));
     }
 
     /// <summary>
